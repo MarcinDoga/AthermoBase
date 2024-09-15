@@ -1,5 +1,7 @@
 # AthermoBase
 
+[Polish](.README_PL.md)
+
 AthermoBase is an application for viewing achievements from Xbox, Steam, and, in the future, Epic Games. The application allows you to set targets that are displayed on the screen during gameplay, making it easier to manage your installed games and earn achievements and ranks with boosters. The application is built on the new WPF engine!
 
 ## Upcoming Updates
