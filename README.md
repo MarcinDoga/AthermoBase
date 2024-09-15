@@ -33,3 +33,4 @@ The new 2.0.0.0 WPF Update is scheduled for release on December 4, 2024.
 
 ## Contact
 
+e-mail: **marcin.doga@interia.pl**
