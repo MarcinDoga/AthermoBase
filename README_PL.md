@@ -30,7 +30,7 @@ Nowa aktualizacja WPF 2.0.0.0 jest zaplanowana na 4 grudnia 2024 r.
 
 1. Sklonuj to repozytorium:
    ```bash
-   git clone https://github.com/yourusername/AthermoBase.git
+   git clone https://github.com/twojeimie/AthermoBase.git
 2. Instalator (wkrótce)
 
 ## Kontakt
