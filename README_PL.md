@@ -1,5 +1,7 @@
 # AthermoBase
 
+[Angielski](./README.md)
+
 AthermoBase to aplikacja do przeglądania osiągnięć z Xbox, Steam, a w przyszłości także z Epic Games. Aplikacja pozwala ustawić cele, które są wyświetlane na ekranie podczas rozgrywki, co ułatwia zarządzanie zainstalowanymi grami oraz zdobywanie osiągnięć i rang z boosterami. Aplikacja jest zbudowana na nowym silniku WPF!
 
 ## Nadchodzące Aktualizacje
