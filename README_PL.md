@@ -4,6 +4,13 @@
 
 AthermoBase to aplikacja do przeglądania osiągnięć z Xbox, Steam, a w przyszłości także z Epic Games. Aplikacja pozwala ustawić cele, które są wyświetlane na ekranie podczas rozgrywki, co ułatwia zarządzanie zainstalowanymi grami oraz zdobywanie osiągnięć i rang z boosterami. Aplikacja jest zbudowana na nowym silniku WPF!
 
+## Tabela pozycji
+- [Nadchodzące Aktualizacje](#nadchodzące-aktualizacje)
+- [Funkcje](#funkcje)
+- [Używanie](#używanie)
+- [Instalacja](#instalacja)
+- [Kontakt](#kontakt)
+
 ## Nadchodzące Aktualizacje
 
 Do końca listopada 2024 roku AthermoBase zostanie w pełni przeniesiony do C# WPF na platformie .NET 8. To przejście znacznie poprawi animacje i efekty dźwiękowe, a aplikacja zyska przyjazny dla użytkownika GUI z ciekawymi detalami. Środowisko WPF pozwoli skupić się na funkcjonalności aplikacji i zmniejszy obciążenie związane z programowaniem animacji i efektów, co zaowocuje znacznymi aktualizacjami funkcji.
