@@ -33,6 +33,9 @@ Nowa aktualizacja WPF 2.0.0.0 jest zaplanowana na 4 grudnia 2024 r.
 - **Rangi i Boostery**: Zdobywaj osiągnięcia i rangi za pomocą boosterów.
 - **Silnik WPF**: Wykorzystuje najnowszą technologię WPF w celu uzyskania nowoczesnego i wydajnego interfejsu użytkownika.
 
+## Używanie
+Po zainstalowaniu uruchom aplikację, aby rozpocząć zarządzanie osiągnięciami i kontami w grze. Możesz ustawiać cele dla osiągnięć, przeglądać swoje postępy i wiele więcej - wszystko w interfejsie AthermoBase.
+
 ## Instalacja
 
 1. Sklonuj to repozytorium:
