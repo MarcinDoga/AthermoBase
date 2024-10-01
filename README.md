@@ -8,6 +8,7 @@ AthermoBase is an application for viewing achievements from Xbox, Steam, and, in
 - [Upcoming Updates](#upcoming-updates)
 - [Features](#features)
 - [Usage](#usage)
+- [Requirements](#system-requirements)
 - [Installation](#installation)
 - [Contact](#contact)
 
