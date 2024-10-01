@@ -36,6 +36,29 @@ Nowa aktualizacja WPF 2.0.0.0 jest zaplanowana na 4 grudnia 2024 r.
 ## Używanie
 Po zainstalowaniu uruchom aplikację, aby rozpocząć zarządzanie osiągnięciami i kontami w grze. Możesz ustawiać cele dla osiągnięć, przeglądać swoje postępy i wiele więcej - wszystko w interfejsie AthermoBase.
 
+## Wymagania systemowe
+
+### Minimalne wymagania
+
+- System Operacyjny: **Windows 10 - 64 bit**
+- Procesor: **Intel Core 2 Duo E4400 / AMD E2-6110**
+- Pamięć: **4 GB RAM**
+- Karta Graficzna: **NVIDIA GeForce 9300M / AMD Radeon 530**
+- Sieć: **Stałe szerokopasmowe połączenie z Internetem**
+- Pamięć: **5 GB dostępnej przestrzeni**
+- Karta dźwiękowa: **kompatybilna z DirectX**
+
+### Zalecane wymagania
+
+- System Operacyjny: **Windows 11 - 64 bit**
+- Procesor: **Intel Core i3-8100 / AMD Ryzen 3 2200G**
+- Pamięć: **8 GB RAM**
+- Karta Graficzna: **NVIDIA GeForce GTX 650 2GB / AMD Radeon R7 2GB**
+- Sieć: **Stałe szerokopasmowe połączenie z Internetem**
+- Pamięć: **8 GB dostępnej przestrzeni**
+- Karta dźwiękowa: **kompatybilna z DirectX**
+
+
 ## Instalacja
 
 1. Sklonuj to repozytorium:
