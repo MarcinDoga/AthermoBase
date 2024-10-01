@@ -41,23 +41,23 @@ Once installed, launch the application to start managing your game achievements 
 
 ### Minimum requirements
 
-Operating System: **Windows 10 - 64 bit**
-Processor: **Intel Core 2 Duo E4400 / AMD E2-6110**
-Memory: **4 GB RAM**
-Graphics: **NVIDIA GeForce 9300M / AMD Radeon 530**
-Network: **Persistent broadband internet connection**
-Storage: **5GB available space**
-Sound Card: **DirectX compatible**
+- Operating System: **Windows 10 - 64 bit**
+- Processor: **Intel Core 2 Duo E4400 / AMD E2-6110**
+- Memory: **4 GB RAM**
+- Graphics: **NVIDIA GeForce 9300M / AMD Radeon 530**
+- Network: **Persistent broadband internet connection**
+- Storage: **5GB available space**
+- Sound Card: **DirectX compatible**
 
 ### Recommended requirements
 
-Operating System: **Windows 11 - 64 bit**
-Processor: **Intel Core i3-8100 / AMD Ryzen 3 2200G**
-Memory: **8 GB RAM**
-Graphics: **NVIDIA GeForce GTX 650 2GB / AMD Radeon R7 2GB**
-Network: **Persistent broadband internet connection**
-Storage: **8GB available space**
-Sound Card: **DirectX compatible**
+- Operating System: **Windows 11 - 64 bit**
+- Processor: **Intel Core i3-8100 / AMD Ryzen 3 2200G**
+- Memory: **8 GB RAM**
+- Graphics: **NVIDIA GeForce GTX 650 2GB / AMD Radeon R7 2GB**
+- Network: **Persistent broadband internet connection**
+- Storage: **8GB available space**
+- Sound Card: **DirectX compatible**
 
 ## Installation
 
