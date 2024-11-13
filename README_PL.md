@@ -69,4 +69,4 @@ Po zainstalowaniu uruchom aplikację, aby rozpocząć zarządzanie osiągnięcia
 
 ## Kontakt
 
-e-mail: **marcin.doga@interia.pl**
+e-mail: **AthermoBase@int.pl**
