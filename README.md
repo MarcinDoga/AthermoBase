@@ -69,4 +69,4 @@ Once installed, launch the application to start managing your game achievements 
 
 ## Contact
 
-e-mail: **marcin.doga@interia.pl**
+e-mail: **AthermoBase@int.pl**
