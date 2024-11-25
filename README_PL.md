@@ -13,6 +13,7 @@ AthermoBase to aplikacja do przeglądania osiągnięć z Xbox, Steam, a w przysz
 - [Kontakt](#kontakt)
 
 ## Nadchodzące Aktualizacje
+(Nie wszystkie funkcje zostaną dodane już w pierwszych wersjach! Funkcje będą dodawane wraz z dalszym rozwojem aplikacji.)
 
 Do końca listopada 2024 roku AthermoBase zostanie w pełni przeniesiony do C# WPF na platformie .NET 8. To przejście znacznie poprawi animacje i efekty dźwiękowe, a aplikacja zyska przyjazny dla użytkownika GUI z ciekawymi detalami. Środowisko WPF pozwoli skupić się na funkcjonalności aplikacji i zmniejszy obciążenie związane z programowaniem animacji i efektów, co zaowocuje znacznymi aktualizacjami funkcji.
 
