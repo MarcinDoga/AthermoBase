@@ -17,8 +17,6 @@ AthermoBase is an application for viewing achievements from Xbox, Steam, and, in
 
 By the end of November 2024, AthermoBase will be fully ported to C# WPF on the .NET 8 framework. This transition will significantly improve animations and sound effects, and the application will gain a user-friendly GUI with interesting details. The WPF environment will allow a focus on application functionality and ease the burden of programming animations and effects, resulting in substantial feature updates.
 
-The new 2.0.0.0 WPF Update is scheduled for release on December 4, 2024.
-
 ### New Features Coming in 2.0.0.0 WPF Update:
 
 - **Installable Plugins**: Extend application functionality with plugins, and create your own plugins.
