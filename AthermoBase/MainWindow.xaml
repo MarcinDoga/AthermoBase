@@ -1,0 +1,445 @@
+﻿<Window x:Class="AthermoBase.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AthermoBase"
+        mc:Ignorable="d"
+        Title="AthermoBase" Height="570" Width="850"
+        Loaded="Window_Loaded"
+        SizeChanged="Window_SizeChanged"
+        Closing="Window_Closing"
+        MinWidth="750"
+        MinHeight="550"
+        Icon="pack://application:,,,/Container/AthermoBase Logo 128x128.png">
+
+    <Window.Resources>
+        <Style x:Key="NoHoverButtonStyle" TargetType="Button">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}">
+                            <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsEnabled" Value="False">
+                                <Setter Property="Background" Value="{x:Static SystemColors.ControlBrush}" />
+                                <Setter Property="Foreground" Value="{x:Static SystemColors.GrayTextBrush}" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.Background>
+            <ImageBrush x:Name="BackgroundImage" Stretch="UniformToFill" ImageSource="pack://application:,,,/Container/image.jpg"/>
+        </Grid.Background>
+        <StackPanel x:Name="Panel3" Background="#303030" Width="100" HorizontalAlignment="Left" Margin="-100,0,0,0" MouseEnter="Panel3_MouseEnter"/>
+        <StackPanel x:Name="Panel1" Background="#505050" Height="10" VerticalAlignment="Top" Margin="0,100,0,0" Opacity="0">
+            <Rectangle x:Name="Bottomer" Opacity="0" Height="100" Fill="DarkOliveGreen" Stroke="DarkOliveGreen" Width="100" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="20,0,0,0"/>
+        </StackPanel>
+        <Border x:Name="SettingsBorder" Background="#707070" BorderBrush="#707070" BorderThickness="1" 
+        HorizontalAlignment="Right" Width="800" Height="300" VerticalAlignment="Top" Margin="0,115,5,0" Visibility="Collapsed" Opacity="0" MouseMove="SettingsBorder_MouseMove">
+            <StackPanel x:Name="SettingsPanel" Background="Transparent" Height="Auto" Width="Auto" Orientation="Horizontal">
+                <ScrollViewer x:Name="SettingsPanelScrool" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" CanContentScroll="True" HorizontalAlignment="Left" Margin="5,5,0,0" Height="Auto" UseLayoutRounding="True">
+                    <StackPanel x:Name="SettingsButtonsPanel" Width="180" Height="250" HorizontalAlignment="Left">
+                        <Button x:Name="roundedButton1" Content="Button1"
+                Width="150" Height="50"
+                Background="#7FFFFFFF" Foreground="Black"
+                FontFamily="Century Gothic" FontSize="13" FontWeight="Bold" Cursor="Hand" HorizontalAlignment="Left" Margin="5,5,0,0">
+                            <Button.Template>
+                                <ControlTemplate TargetType="{x:Type Button}">
+                                    <Border Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="0"
+                            CornerRadius="1">
+                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Button.Template>
+                        </Button>
+                        <Button x:Name="roundedButton2" Content="Button2"
+                Width="150" Height="50"
+                Background="#7FFFFFFF" Foreground="Black"
+                FontFamily="Century Gothic" FontSize="13" FontWeight="Bold" Cursor="Hand" HorizontalAlignment="Left" Margin="5,5,0,0">
+                            <Button.Template>
+                                <ControlTemplate TargetType="{x:Type Button}">
+                                    <Border Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="0"
+                            CornerRadius="1">
+                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Button.Template>
+                        </Button>
+                        <Button x:Name="roundedButton3" Content="Button3"
+                Width="150" Height="50"
+                Background="#7FFFFFFF" Foreground="Black"
+                FontFamily="Century Gothic" FontSize="13" FontWeight="Bold" Cursor="Hand" HorizontalAlignment="Left" Margin="5,5,0,0">
+                            <Button.Template>
+                                <ControlTemplate TargetType="{x:Type Button}">
+                                    <Border Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="0"
+                            CornerRadius="1">
+                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Button.Template>
+                        </Button>
+                        <Button x:Name="roundedButton4" Content="Button4"
+                Width="150" Height="50"
+                Background="#7FFFFFFF" Foreground="Black"
+                FontFamily="Century Gothic" FontSize="13" FontWeight="Bold" Cursor="Hand" HorizontalAlignment="Left" Margin="5,5,0,0">
+                            <Button.Template>
+                                <ControlTemplate TargetType="{x:Type Button}">
+                                    <Border Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="0"
+                            CornerRadius="1">
+                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Button.Template>
+                        </Button>
+                        <Button x:Name="roundedButton5" Content="Button5"
+                Width="150" Height="50"
+                Background="#7FFFFFFF" Foreground="Black"
+                FontFamily="Century Gothic" FontSize="13" FontWeight="Bold" Cursor="Hand" HorizontalAlignment="Left" Margin="5,5,0,0">
+                            <Button.Template>
+                                <ControlTemplate TargetType="{x:Type Button}">
+                                    <Border Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="0"
+                            CornerRadius="1">
+                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Button.Template>
+                        </Button>
+                        <Button x:Name="roundedButton6" Content="Button6"
+                Width="150" Height="50"
+                Background="#7FFFFFFF" Foreground="Black"
+                FontFamily="Century Gothic" FontSize="13" FontWeight="Bold" Cursor="Hand" HorizontalAlignment="Left" Margin="5,5,0,0">
+                            <Button.Template>
+                                <ControlTemplate TargetType="{x:Type Button}">
+                                    <Border Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="0"
+                            CornerRadius="1">
+                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Button.Template>
+                        </Button>
+                        <Label x:Name="StartupInfo" Content="StartupInfo" HorizontalAlignment="Left"/>
+                        <Button x:Name="roundedButton7" Content="Button7"
+                Width="150" Height="50"
+                Background="#7FFFFFFF" Foreground="Black"
+                FontFamily="Century Gothic" FontSize="13" FontWeight="Bold" Cursor="Hand" HorizontalAlignment="Left" Margin="5,5,0,0">
+                            <Button.Template>
+                                <ControlTemplate TargetType="{x:Type Button}">
+                                    <Border Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="0"
+                            CornerRadius="1">
+                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Button.Template>
+                        </Button>
+
+                    </StackPanel>
+                </ScrollViewer>
+            </StackPanel>
+        </Border>
+        <Grid>
+            <Border x:Name="GamesBorder" Background="#707070" BorderBrush="#707070" BorderThickness="1" 
+        HorizontalAlignment="Right" Width="800" Height="300" VerticalAlignment="Top" Margin="0,115,5,0" 
+        Visibility="Visible" Opacity="1" MouseMove="GamesBorder_MouseMove">
+                <Grid>
+                    <ListBox x:Name="GamesListBox"
+         VerticalAlignment="Top"
+         HorizontalAlignment="Left"
+         HorizontalContentAlignment="Stretch"
+         SelectionChanged="GamesListBox_SelectionChanged"
+         Margin="5,50,0,0" Background="#7FFFFFFF">
+                        <ListBox.ItemContainerStyle>
+                            <Style TargetType="ListBoxItem">
+                                <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="ListBoxItem">
+                                            <Border x:Name="Border" Background="Transparent" Padding="5" >
+                                                <ContentPresenter />
+                                            </Border>
+                                            <ControlTemplate.Triggers>
+                                                <Trigger Property="IsSelected" Value="True">
+                                                    <Setter TargetName="Border" Property="Background" Value="LightGray" />
+                                                </Trigger>
+                                                <Trigger Property="IsMouseOver" Value="True">
+                                                    <Setter TargetName="Border" Property="Background" Value="LightGray" />
+                                                </Trigger>
+                                                <Trigger Property="IsFocused" Value="True">
+                                                    <Setter TargetName="Border" Property="Background" Value="Transparent" />
+                                                </Trigger>
+                                            </ControlTemplate.Triggers>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                        </ListBox.ItemContainerStyle>
+                    </ListBox>
+                        <ProgressBar x:Name="progressBar"
+                         VerticalAlignment="Bottom"
+                         HorizontalAlignment="Stretch"
+                         Height="20"
+                         Margin="5"
+                         Visibility="Collapsed"/>
+                    <Border x:Name="GameHeaderBorder" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="5" Visibility="Collapsed">
+                        <Image x:Name="GameHeaderBox" VerticalAlignment="Center" HorizontalAlignment="Center" Stretch="Uniform"/>
+                    </Border>
+                    <TextBox x:Name="GamesTextBox"
+                         Margin="5"
+                         Background="#7FFFFFFF"
+                         Foreground="Black"
+                         VerticalAlignment="Top"
+                         HorizontalAlignment="Left"
+                         TextChanged="GamesTextBox_TextChanged"
+                         />
+                    <StackPanel VerticalAlignment="Top" HorizontalAlignment="Center" Margin="5">
+                    <TextBlock x:Name="gameNameTextBlock"
+                    Text="TextBlock" 
+                    TextWrapping="Wrap" 
+                    Visibility="Collapsed"
+                    />
+
+                    <TextBlock x:Name="gameIdTextBlock" 
+                    Text="TextBlock2" 
+                    TextWrapping="Wrap" 
+                    Visibility="Collapsed"
+                    />
+                    </StackPanel>
+                    <ScrollViewer x:Name="gameDescPanel" VerticalAlignment="Top" HorizontalAlignment="Right" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+                        <StackPanel>
+                            <TextBlock x:Name="gameDescTextBlock"
+                   Text="TextBlock3" 
+                   TextWrapping="Wrap" 
+                   Visibility="Collapsed" />
+                        </StackPanel>
+                    </ScrollViewer>
+                    <Button x:Name="playButton" Content="playButton" Visibility="Collapsed" Click="playButton_Click"
+                Width="150" Height="50"
+                Background="#7FFFFFFF" Foreground="Black"
+                FontFamily="Century Gothic" FontSize="13" FontWeight="Bold" Cursor="Hand" HorizontalAlignment="Right">
+                        <Button.Template>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="0"
+                            CornerRadius="1">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <TextBlock x:Name="gamesInfo" Text="Under Developing" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="5" Foreground="#E5000000"/>
+                </Grid>
+            </Border>
+        </Grid>
+        <StackPanel x:Name="MainPanel" Background="#303030" Height="100" VerticalAlignment="Top" Orientation="Horizontal" UseLayoutRounding="True" Margin="0,-100,0,0">
+            <Button Style="{StaticResource NoHoverButtonStyle}" x:Name="GamerTag" Foreground="White" BorderBrush="Transparent" Background="Transparent" Width="100" Height="95" Click="GamerTag_Click" VerticalAlignment="Top" Margin="20,0,0,0" MouseEnter="GamerTag_MouseEnter"  MouseLeave="GamerTag_MouseLeave"  Cursor="Hand" FontWeight="Bold" FontFamily="Century Gothic" FontSize="15">
+                <TextBlock x:Name="SetNickname" Text="..."
+                    Foreground="ForestGreen"
+                    TextWrapping="Wrap" 
+                    TextTrimming="WordEllipsis" 
+                    TextAlignment="Center"
+                    VerticalAlignment="Center" 
+                    HorizontalAlignment="Center" FontSize="13"/>
+            </Button>
+            <Button Style="{StaticResource NoHoverButtonStyle}" x:Name="MainButton1" Foreground="White" BorderBrush="Transparent" Background="Transparent" Width="100" Height="95" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,0,0,0" Click="MainButton1_Click" MouseEnter="MainButton1_MouseEnter"  MouseLeave="MainButton1_MouseLeave"  Cursor="Hand" FontWeight="Bold" FontFamily="Century Gothic" FontSize="15">
+                <TextBlock Text="MainButton1" 
+                   TextWrapping="Wrap" 
+                   TextTrimming="WordEllipsis" 
+                   TextAlignment="Center"
+                   VerticalAlignment="Center" 
+                   HorizontalAlignment="Center" FontSize="13"/>
+            </Button>
+            <Button Style="{StaticResource NoHoverButtonStyle}" x:Name="MainButton2" Foreground="White" BorderBrush="Transparent" Background="Transparent" Width="100" Height="95" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,0,0,0" Click="MainButton2_Click" MouseEnter="MainButton2_MouseEnter" MouseLeave="MainButton2_MouseLeave" Cursor="Hand" FontWeight="Bold" FontFamily="Century Gothic" FontSize="15">
+                <TextBlock Text="MainButton2" 
+                   TextWrapping="Wrap" 
+                   TextTrimming="WordEllipsis" 
+                   TextAlignment="Center"
+                   VerticalAlignment="Center" 
+                   HorizontalAlignment="Center" FontSize="13"/>
+            </Button>
+            <Button Style="{StaticResource NoHoverButtonStyle}" x:Name="MainButton3" Foreground="White" BorderBrush="Transparent" Background="Transparent" Width="100" Height="95" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,0,0,0" Click="MainButton3_Click" MouseEnter="MainButton3_MouseEnter" MouseLeave="MainButton3_MouseLeave" Cursor="Hand" FontWeight="Bold" FontFamily="Century Gothic" FontSize="15">
+                <TextBlock Text="MainButton3" 
+                   TextWrapping="Wrap" 
+                   TextTrimming="WordEllipsis" 
+                   TextAlignment="Center"
+                   VerticalAlignment="Center" 
+                   HorizontalAlignment="Center" FontSize="13"/>
+
+            </Button>
+        </StackPanel>
+        <StackPanel x:Name="Panel2" Background="#404040" Width="100" HorizontalAlignment="Right" Margin="0,0,-100,0">
+            <Button Style="{StaticResource NoHoverButtonStyle}" x:Name="SetButton1" Foreground="White" BorderBrush="Transparent" Background="Transparent" Width="90" Height="100" Click="SetButton1_Click" MouseEnter="SetButton1_MouseEnter" MouseLeave="SetButton1_MouseLeave" Cursor="Hand" FontWeight="Bold" FontFamily="Century Gothic" FontSize="15" Margin="0,100,0,0" HorizontalAlignment="Right">
+                <TextBlock Text="SetButton1" 
+                    TextWrapping="Wrap" 
+                    TextTrimming="WordEllipsis" 
+                    TextAlignment="Center"
+                    VerticalAlignment="Center" 
+                    HorizontalAlignment="Center" FontSize="13"/>
+            </Button>
+            <Button Style="{StaticResource NoHoverButtonStyle}" x:Name="SetButton2" Foreground="White" BorderBrush="Transparent" Background="Transparent" Width="90" Height="100" Click="SetButton2_Click" MouseEnter="SetButton2_MouseEnter" MouseLeave="SetButton2_MouseLeave" Cursor="Hand" FontWeight="Bold" FontFamily="Century Gothic" FontSize="15" HorizontalAlignment="Right">
+                <TextBlock Text="SetButton2" 
+                    TextWrapping="Wrap" 
+                    TextTrimming="WordEllipsis" 
+                    TextAlignment="Center"
+                    VerticalAlignment="Center" 
+                    HorizontalAlignment="Center" FontSize="13"/>
+            </Button>
+            <Button Style="{StaticResource NoHoverButtonStyle}" x:Name="SetButton3" Foreground="White" BorderBrush="Transparent" Background="Transparent" Width="90" Height="100" Click="SettingsShow_Click" MouseEnter="SetButton3_MouseEnter" MouseLeave="SetButton3_MouseLeave" Cursor="Hand" FontWeight="Bold" FontFamily="Century Gothic" FontSize="15" HorizontalAlignment="Right">
+                <TextBlock Text="SetButton3" 
+                    TextWrapping="Wrap" 
+                    TextTrimming="WordEllipsis" 
+                    TextAlignment="Center"
+                    VerticalAlignment="Center" 
+                    HorizontalAlignment="Center" FontSize="13"/>
+            </Button>
+            <StackPanel x:Name="Panel5" Background="#505050" Width="10" Opacity="1" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,-400,0,0" Height="800">
+                <Rectangle x:Name="Bottomer2" Opacity="0" Height="100" Fill="DarkOliveGreen" Stroke="DarkOliveGreen" Width="10" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="0,100,0,0"/>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel x:Name="Panel4" Background="#303030" Height="50" VerticalAlignment="Bottom" Margin="0,0,0,-50">
+            <Label VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="5,25,0,0" Content="Copyright 2024 AthermoBase ©. Do not Distribute!" Foreground="#E5000000"/>
+            <Label x:Name="adminTextBlock" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="5,-50,0,0" Content="Administrator" Opacity="0.5" Visibility="Collapsed" Foreground="#E5000000"/>
+        </StackPanel>
+        <Button Style="{StaticResource NoHoverButtonStyle}" x:Name="TogglePanel" Foreground="White" BorderBrush="Transparent" Background="Transparent" Width="80" Height="95" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,0,0,0" Click="TogglePanel_Click" Cursor="Hand" FontWeight="Bold" FontFamily="Century Gothic" FontSize="15">
+            <TextBlock Text="..." 
+                   TextWrapping="Wrap" 
+                   TextTrimming="WordEllipsis" 
+                   TextAlignment="Center"
+                   VerticalAlignment="Center" 
+                   HorizontalAlignment="Center" FontSize="13"/>
+        </Button>
+        <Grid x:Name="NotificationOverlay" Background="#AA000000" Visibility="Collapsed" Opacity="0" MouseLeftButtonDown="NotificationOverlay_MouseLeftButtonDown">
+            <Border x:Name="NotifyBorder" Background="White" Padding="20"
+            Width="300" Height="150" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <ScrollViewer VerticalScrollBarVisibility="Auto">
+                    <StackPanel>
+                        <TextBlock x:Name="NotifyTextBlock" Text="Test Message\nTest Message" 
+                           FontSize="16" TextAlignment="Center" FontFamily="Century Gothic" 
+                           FontWeight="Bold" TextWrapping="Wrap"/>
+                        <TextBox x:Name="NameTextBox"
+                         Width="200"
+                         Margin="0,5,0,0"
+                         Background="#7FFFFFFF"
+                         Foreground="Black"
+                         PreviewKeyDown="NameTextBox_PreviewKeyDown"
+                         VerticalAlignment="Center"
+                         HorizontalAlignment="Center"
+                         Visibility="Collapsed"/>
+                        <TextBlock x:Name="PlaceholderText"
+                           Text="(Enter gamertag)"
+                           Foreground="#303030"
+                           VerticalAlignment="Top"
+                           HorizontalAlignment="Center"
+                           Margin="-105, -17,0,0"
+                           IsHitTestVisible="False"
+                           Visibility="Collapsed"
+                           />
+                        <TextBox x:Name="EmailTextBox"
+                         Width="200"
+                         Margin="0,5,0,0"
+                         Background="#7FFFFFFF"
+                         Foreground="Black"
+                         PreviewKeyDown="NameTextBox_PreviewKeyDown"
+                         VerticalAlignment="Center"
+                         HorizontalAlignment="Center"
+                         Visibility="Collapsed"/>
+                        <TextBlock x:Name="PlaceholderText2"
+                           Text="(Enter e-mail)"
+                           Foreground="#303030"
+                           VerticalAlignment="Top"
+                           HorizontalAlignment="Center"
+                           Margin="-125, -17,0,0"
+                           IsHitTestVisible="False"
+                           Visibility="Collapsed"
+                           />
+                        <TextBox x:Name="VerifyTextBox"
+                         Width="200"
+                         Margin="0,5,0,0"
+                         Background="#7FFFFFFF"
+                         Foreground="Black"
+                         PreviewKeyDown="NameTextBox_PreviewKeyDown"
+                         VerticalAlignment="Center"
+                         HorizontalAlignment="Center"
+                         Visibility="Collapsed"/>
+                        <TextBlock x:Name="PlaceholderText3"
+                           Text="(Enter code)"
+                           Foreground="#303030"
+                           VerticalAlignment="Top"
+                           HorizontalAlignment="Center"
+                           Margin="-132, -17,0,0"
+                           IsHitTestVisible="False"
+                           Visibility="Collapsed"
+                           />
+                        <Button x:Name="CreateAccount" Content="Button1" Visibility="Collapsed"
+                Width="200" Height="50"
+                Background="#7FFFFFFF" Foreground="#80303030"
+                FontFamily="Century Gothic" FontSize="13" FontWeight="Bold" Cursor="Hand" HorizontalAlignment="Center" Margin="0,5,0,0" Click="CreateAccount_Click" IsEnabled="False">
+                            <Button.Template>
+                                <ControlTemplate TargetType="{x:Type Button}">
+                                    <Border Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="0"
+                            CornerRadius="1">
+                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Button.Template>
+                        </Button>
+                        <TextBlock x:Name="AccountWarning" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,5,0,0" Foreground="White" TextWrapping="Wrap" Visibility="Collapsed"/>
+                    </StackPanel>
+                </ScrollViewer>
+            </Border>
+        </Grid>
+        <Grid x:Name="MessageBoxControl" Background="#AA000000" Visibility="Collapsed" Opacity="0" MouseLeftButtonDown="MessageBox_MouseLeftButtonDown">
+            <Border x:Name="MessageBoxBorder" Background="White" Padding="20"
+            Width="300" Height="150" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <ScrollViewer VerticalScrollBarVisibility="Auto">
+                    <StackPanel>
+                        <TextBlock x:Name="MessageBoxTitle" Text="Test Message\nTest Message" 
+                           FontSize="16" TextAlignment="Center" FontFamily="Century Gothic" 
+                           FontWeight="Bold" TextWrapping="Wrap"/>
+
+                        <TextBlock x:Name="MessageTextBlockControl" Text="Test Message\nTest Message" 
+                           TextAlignment="Center" FontFamily="Century Gothic" 
+                           TextWrapping="Wrap"
+                           Margin="0,5,0,0"/>
+                        <Button x:Name="MessageBoxButton" Content="Ok" Visibility="Visible"
+                Width="80" Height="30"
+                Background="#7FFFFFFF" Foreground="#80303030"
+                FontFamily="Century Gothic" FontSize="13" FontWeight="Bold" Cursor="Hand" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="5" Click="MessageBoxButton_Click" IsEnabled="True">
+                            <Button.Template>
+                                <ControlTemplate TargetType="{x:Type Button}">
+                                    <Border Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="0"
+                            CornerRadius="1">
+                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Button.Template>
+                        </Button>
+                    </StackPanel>
+                </ScrollViewer>
+            </Border>
+        </Grid>
+    </Grid>
+</Window>
