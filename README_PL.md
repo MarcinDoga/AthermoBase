@@ -66,6 +66,9 @@ Po zainstalowaniu uruchom aplikację, aby rozpocząć zarządzanie osiągnięcia
    git clone https://github.com/twojeimie/AthermoBase.git
 2. Instalator (wkrótce)
 
+## Licencja
+Ten projekt jest licencjonowany na podstawie licencji Limited Usage License - szczegółowe informacje można znaleźć w pliku [LICENSE](./LICENSE).
+
 ## Kontakt
 
 e-mail: **AthermoBase@int.pl**
