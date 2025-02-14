@@ -13,5 +13,5 @@ The following table outlines the versions of our software that are supported and
 
 ## Reporting a Vulnerability
 
-If you discover a security vulnerability, please report it by emailing us at AthermoBase@int.pl
+If you discover a security vulnerability, please report it by emailing us at AthermoBase.support@int.pl
 We take all reports seriously and aim to address issues promptly.
