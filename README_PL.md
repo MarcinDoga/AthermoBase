@@ -1,8 +1,11 @@
-# AthermoBase
+# AthermoBase Launcher
 
 [Angielski](./README.md)
 
-AthermoBase to aplikacja do przeglądania osiągnięć z Xbox, Steam, a w przyszłości także z Epic Games. Aplikacja pozwala ustawić cele, które są wyświetlane na ekranie podczas rozgrywki, co ułatwia zarządzanie zainstalowanymi grami oraz zdobywanie osiągnięć i rang z boosterami. Aplikacja jest zbudowana na nowym silniku WPF!
+AthermoBase to dedykowany launcher tworzony specjalnie dla projektu gry.
+Aplikacja pozwala graczom uruchamiać grę, śledzić osiągnięcia w grze i monitorować osiągnięcia w przejrzysty sposób. 
+W przeciwieństwie do wcześniejszych wersji i koncepcji, AthermoBase nie jest już uniwersalnym launcherem dla gier z wielu platform.
+Celem nowego AthermoBase jest integracja z jedną grą oraz zapewnienie wciągającego doświadczenia dla gracza. Aplikacja jest budowana budowana w C# WPF (.NET 8), skupiając się na wydajności, przejrzystości i nowoczesnym interfejsie użytkownika.
 
 ## Tabela pozycji
 - [Nadchodzące Aktualizacje](#nadchodzące-aktualizacje)
@@ -15,21 +18,13 @@ AthermoBase to aplikacja do przeglądania osiągnięć z Xbox, Steam, a w przysz
 ## Nadchodzące Aktualizacje
 (Nie wszystkie funkcje zostaną dodane już w pierwszych wersjach! Funkcje będą dodawane wraz z dalszym rozwojem aplikacji.)
 
-Do końca listopada 2024 roku AthermoBase zostanie w pełni przeniesiony do C# WPF na platformie .NET 8. To przejście znacznie poprawi animacje i efekty dźwiękowe, a aplikacja zyska przyjazny dla użytkownika GUI z ciekawymi detalami. Środowisko WPF pozwoli skupić się na funkcjonalności aplikacji i zmniejszy obciążenie związane z programowaniem animacji i efektów, co zaowocuje znacznymi aktualizacjami funkcji.
-
-### Nowe funkcje które pojawią się w aktualizacji 2.0.0.0 WPF:
-
-- **Instalowane pluginy**: Rozszerz funkcjonalność aplikacji za pomocą pluginów i twórz własne.
-- **Ulepszone Wyświetlanie Osiągnięć**: Łatwiejsze przeglądanie osiągnięć.
-- **Planowanie czasu użytkownika**: Planuj i zarządzaj czasem gry.
-- **Szybkie i łatwe zapisywanie konta**: Uproszczone zarządzanie kontem.
-- **Zwiększone bezpieczeństwo**: Obejmuje weryfikację 2-etapową i potwierdzenie e-mailem z 6-cyfrowym kodem do działań na koncie.
+Naprawdę działający launcher UI specjalnie dla przyszłej gry.
 
 ## Funkcje
 
-- **Śledzenie osiągnięć**: Przeglądaj osiągnięcia z Xbox i Steam z przyszłą obsługą Epic Games.
+- **Śledzenie osiągnięć**: Przeglądanie osiągnięć z sesji gry.
 - **Wyświetlanie celów**: Ustawianie i wyświetlanie celów osiągnięć bezpośrednio na ekranie podczas gry.
-- **Zarządzanie grami**: Łatwe zarządzanie zainstalowanymi grami.
+- **Zarządzanie grą**: Łatwe zarządzanie instalacjami gry.
 - **Rangi i Boostery**: Zdobywaj osiągnięcia i rangi za pomocą boosterów.
 - **Silnik WPF**: Wykorzystuje najnowszą technologię WPF w celu uzyskania nowoczesnego i wydajnego interfejsu użytkownika.
 
