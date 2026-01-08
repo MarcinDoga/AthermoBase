@@ -1,6 +1,6 @@
 # AthermoBase Launcher
 
-[Polish](./README_PL.md)
+[Polski](./README_PL.md)
 
 AthermoBase is a dedicated launcher created specifically for the game project. The application allows players to launch the game, track in-game achievements, and monitor progress in a clear way. Unlike previous versions and concepts, AthermoBase is no longer a universal launcher for games from multiple platforms. The goal of the new AthermoBase is to integrate with a single game and provide an engaging experience for the player. The application is built in C# WPF (.NET 8), focusing on performance, clarity, and a modern user interface.
 
