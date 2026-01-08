@@ -1,6 +1,6 @@
 # AthermoBase Launcher
 
-[Angielski](./README.md)
+[English](./README.md)
 
 AthermoBase to dedykowany launcher tworzony specjalnie dla projektu gry.
 Aplikacja pozwala graczom uruchamiać grę, śledzić osiągnięcia w grze i monitorować osiągnięcia w przejrzysty sposób. 
